@@ -1,0 +1,308 @@
+@charset "utf-8";
+/*
+  This the styling page for my homepage
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f0f4f8;
+  }
+  
+  .page-wrapper {
+	display: grid;
+	grid-template-columns: 220px 1fr 250px;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas:
+	  "nav nav nav"
+	  "sidebar main right"
+	  "footer footer footer";
+	min-height: 100vh;
+	column-gap: 20px;
+  }
+  
+  /* Navigation Bar */
+  .top-nav {
+	grid-area: nav;
+	padding: 10px 20px;
+	background-color: #004080;
+  }
+  
+  .top-nav ul {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+  }
+  
+  .top-nav a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 0.95rem;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+  }
+  
+  .icon-white {
+	fill: white;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+	grid-area: sidebar;
+	background-color: #002244;
+	color: #fff;
+	padding: 20px;
+  }
+  
+  .sidebar-header {
+	text-align: center;
+  }
+  
+  .profile-photo {
+	width: 100px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+  }
+  
+  .sidebar-info {
+	display: grid;
+	gap: 15px;
+	margin-top: 20px;
+  }
+  
+  .info-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  }
+  
+  /* Main Area */
+  .main-area {
+	grid-area: main;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px; /* Added spacing between sections */
+  }
+  
+  .main-header h1 {
+	font-size: 1.4rem;
+	color: #002244;
+  }
+  
+  .main-content ol {
+	padding-left: 20px;
+  }
+  
+  .main-content ol li {
+	margin-bottom: 8px;
+  }
+  
+  /* Projects Section */
+  .bottom-row {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  }
+  
+  .projects-title {
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 10px;
+  }
+  
+  .projects {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 15px;
+  }
+  
+  .project-item {
+	background: #e6eef5;
+	padding: 10px;
+	border-radius: 5px;
+	display: grid;
+	gap: 10px;
+	flex: 1;
+	min-width: 0;
+  }
+  
+  .project-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .project-item ul {
+	margin-top: 5px;
+	padding-left: 20px;
+  }
+  
+  /* Right Sidebar */
+  .right-sidebar {
+	grid-area: right;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px 15px;
+	background-color: transparent;
+  }
+  
+  .contact-info, .links-info, .skills-info, .image-box {
+	background: #ffffff;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .contact-info h3,
+  .links-info h3,
+  .skills-info h3 {
+	margin-bottom: 10px;
+  }
+  
+  .links-info a {
+	color: #002244;
+	text-decoration: none;
+  }
+  
+  .links-info a:hover {
+	text-decoration: underline;
+  }
+  
+  .image-box img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+	border-radius: 5px; /* Optional rounded corners */
+  }
+
+  body {
+	font-size: 16px;
+	margin: 0; 
+	line-height: 1.6; /* Improve overall text readability */
+  }
+  
+  header {
+	margin-bottom: 20px; /* Space below the header */
+	padding: 10px 0;
+	text-align: center; /* Center navigation items if desired */
+  }
+  
+  nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block; /* To center the list */
+  }
+  
+  nav li {
+	display: inline;
+	margin: 0 15px;
+  }
+  
+  nav a {
+	text-decoration: none;
+	color: #333; /* Example link color */
+  }
+  
+  /* the article styles*/
+  article {
+	margin-bottom: 30px; /* Space below the article */
+	padding: 20px;
+	border: 1px solid #ccc; /* Optional border around the article */
+  }
+  
+/* About page grid layout */
+.about-me-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 20px 40px;
+	max-width: 100%;
+  }
+  
+  /* H1 centered */
+  .about-me-grid h1 {
+	font-size: 1.4rem; /* same size as main-header h1 */
+	color: #002244;
+	padding: 10px;
+	border: none;
+	text-align: center;
+  }
+  
+  /* Intro row: image left, bio right */
+  .intro-section {
+	display: grid;
+	grid-template-columns: 1fr 3fr; /* Make bio-text wider */
+	column-gap: 30px;
+	align-items: start;
+	width: 100%; /* Ensure full width */
+  }
+  
+  /* Image styling */
+  .profile-pic {
+	width: 100px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bio-text {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	word-break: normal;
+	white-space: normal;
+	overflow-wrap: break-word;
+  }
+  
+  /* Headings (H2) */
+  .about-me-grid h2 {
+	padding: 10px;
+	border: 0;
+	font-size: 1.4rem;
+	color: #002244;
+	text-align: left;
+  }
+  .about-me-grid ul {
+	padding-left: 30px; /* Padding from the left */
+  }
+  
+  .about-me-grid ul li {
+	padding: 5px 10px; /* Top/bottom: 5px, left/right: 10px */
+	margin-bottom: 5px; /* Optional: spacing between items */
+	list-style-type: disc; /* Keeps bullet styling */
+	margin-left: 10px;
+  }
+
+  .about-box {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 6px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .fade-out {
+	opacity: 0;
+	transition: opacity 2s ease;
+  }
+
+  /* Footer */
+  .site-footer {
+	grid-area: footer;
+	text-align: center;
+	padding: 10px;
+	background-color: #004080;
+	color: #fff;
+	font-size: 0.85rem;
+  }

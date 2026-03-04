@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Subscribe to our Email Newsletter</title>
+  <link rel="stylesheet" href="my_form.css" />
+</head>
+<body>
+    <main>
+        <h1>Please Subscribe to our Newsletter</h1>
+        <form id="subscriptionForm" class="subscription-form">
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email Address *" required>
+            <span id="email_error" class="error-message">Please enter a valid email.</span>
+          </div>
+      
+          <div class="form-group">
+            <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email *" required>
+            <span id="confirm_email_error" class="error-message">Emails do not match.</span>
+          </div>
+      
+          <button type="submit">Subscribe</button>
+          <div id="successMessage" class="success-message">Thank you for subscribing!</div>
+        </form>
+    </main>
+
+  <script src="my_form.js"></script>
+</body>
+</html>
