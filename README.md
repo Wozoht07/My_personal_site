@@ -3,7 +3,7 @@
 Welcome to my professional portfolio! This repository showcases my journey as a Computer Science student at NEIU, focusing on full-stack web development and database architecture.
 
 ## 🚀 Live Demo
-**Check out the site here:** [https://johnsuprien.github.io/My_personal_site/](https://johnsuprien.github.io/My_personal_site/)
+**Check out the site here:** [https://wozoht07.github.io/My_personal_site/](https://wozoht07.github.io/My_personal_site/)
 
 ---
 
@@ -30,6 +30,6 @@ Welcome to my professional portfolio! This repository showcases my journey as a 
 ---
 
 ## 📬 Contact & Professional Links
-* **LinkedIn:** [linkedin.com/in/johnsuprien](https://linkedin.com/in/johnsuprien)
-* **GitHub:** [github.com/johnsuprien](https://github.com/johnsuprien)
+* **LinkedIn:** [linkedin.com/in/johnsuprien](https://www.linkedin.com/in/john-s-6aaa128a/)
+* **GitHub:** [github.com/wozoht07](https://wozoht07.github.io/My_personal_site/)
 * **Email:** john.s.@iu.edu
