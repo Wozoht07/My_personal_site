@@ -34,7 +34,7 @@
   }
 
   .top-nav a.active {
-    background-color: #4CAF50; /* Or your preferred highlight color */
+    background-color: #4CAF50; 
     color: white;
     border-radius: 4px;
 }
