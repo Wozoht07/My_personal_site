@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>John Suprien</title>
-  <link rel="shortcut icon" type="image/png" href="Images/jsfavicon 2.ico">
-  <link rel="stylesheet" href="my_page_layout.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Suprien | About Me</title>
+<link rel="shortcut icon" type="image/png" href="Images/jsfavicon 2.ico">
+<link rel="stylesheet" href="my_page_layout.css">
 </head>
 <body>
-  <div class="page-wrapper">
 
-    <!-- Top Navigation -->
-      <nav class="top-nav" style="background-color: #004080;">
-        <ul>
-          <li>
-            <a href="index.html">
-             <svg class="icon-white" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16">
-              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-             </svg>
-             Home
-            </a>
-           </li>
-           <li><a href="About_me.html" class="active">👤 About Me</a></li>
-            <li><a href="contact_us.html">✉️ Contact</a></li>
-        </ul>
-      </nav>
-     <main class="main-area">
-      <article class="about-me-grid">
-         <div class="about-box">
-           <h1>About Me</h1>
-         </div>
-       
-         <div class="intro-section about-box">
-           <img src="Images/JS_photo.png" alt="John Suprien" class="profile-pic" />
-           <div class="bio-text">
-             <p>My name is John Suprien. I am a student at Northeastern Illinois University (NEIU) majoring in Computer Science.
-               This is my second bachelor, my first one was in Civil Engineering. I have worked for a few years in that field I decided to transition into the tech world.</p>
-               <p> I am skilled in Python and Java programming, as well as relational databases like SQL AND MYSQL.
-               I know front-end and back-end web development, using tools like HTML, CSS, JS, PHP.</P>
-               <p>I am an introvert, I like to read, hang out with friends, talk politics, and play sports.</p>
-            </div>
-         </div>
-       
-         <div class="about-box">
-          <h2 class="fade-target">Areas of Knowledge and Skill Set:</h2>
-           <ul>
-             <li><a href="https://www.nba.com">NBA.com</a></li>
-             <li><a href="https://www.uefa.com/uefachampionsleague/">UEFA Champions League</a></li>
-             <li><a href="https://www.chicagobears.com/schedule/">Chicago Bears</a></li>
-           </ul>
-         </div>
-       
-         <div class="about-box">
-           <h2>Areas of Knowledge and Skill Set:</h2>
-           <ul>
-             <li>Java and Python programming</li>
-             <li>Database With SQL/MySQL</li>
-             <li>Web Development (HTML, CSS, JavaScript, PHP)</li>
-           </ul>
-         </div>
-       </article>
+<!-- ── HEADER ──────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="brand">
+    John Suprien <span>Full Stack Dev</span>
+  </div>
+  <button class="hamburger" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
 
-       <script>("DOMContentLoaded", function () {
-        const headings = document.querySelectorAll("h2");
-      
-        headings.forEach(h2 => {
-          setTimeout(() => {
-            h2.classList.add("fade-out");
-          }, 3000); // Fades out after 3 seconds
-        });
-      });
-      </script>
-      </main>
+<!-- ── SLIDE-OUT DRAWER ─────────────────────────────────── -->
+<nav class="nav-drawer" id="navDrawer" aria-label="Main Navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About_me.html" class="active">About Me</a></li>
+    <li><a href="contact_us.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
 
-      <!-- Footer -->
-     <footer class="site-footer">
-       &copy; John Suprien • 34001 S Deep Dish, IL • 773-012-3456
-     </footer>
-   </div>
+<!-- ── PAGE ─────────────────────────────────────────────── -->
+<div class="page-wrapper">
+
+  <!-- HERO -->
+  <div class="about-hero">
+    <h1>About Me</h1>
+    <p class="subtitle">Computer Science · NEIU · Chicago, IL</p>
+  </div>
+
+  <!-- INTRO: photo + bio -->
+  <section class="intro-section">
+    <img class="profile-photo" src="Images/JS_photo.png" alt="John Suprien" />
+    <div class="bio-text">
+      <h2>John Suprien</h2>
+      <p>My name is John Suprien. I am a student at Northeastern Illinois University (NEIU) majoring in Computer Science. This is my second bachelor — my first was in Civil Engineering. After working in that field for a few years, I decided to transition into the tech world.</p>
+      <p>I am skilled in Python and Java programming, as well as relational databases like SQL and MySQL. I also work in front-end and back-end web development using HTML, CSS, JavaScript, and PHP.</p>
+      <p>I am an introvert. I enjoy reading, hanging out with friends, talking politics, and playing sports.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS + INTERESTS -->
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>Skills &amp; Technologies</h3>
+      <ul>
+        <li>Java &amp; Python Programming</li>
+        <li>Database Design with SQL / MySQL</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>PHP &amp; Back-End Web Development</li>
+      </ul>
+    </div>
+    <div class="about-card">
+      <h3>Sports &amp; Interests</h3>
+      <ul>
+        <li><a href="https://www.nba.com" target="_blank" rel="noopener">NBA</a></li>
+        <li><a href="https://www.uefa.com/uefachampionsleague/" target="_blank" rel="noopener">UEFA Champions League</a></li>
+        <li><a href="https://www.chicagobears.com/schedule/" target="_blank" rel="noopener">Chicago Bears</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2024 John Suprien &mdash; Chicago, IL</p>
+  </footer>
+
+</div>
+
+<script src="main.js"></script>
+
 </body>
 </html>
